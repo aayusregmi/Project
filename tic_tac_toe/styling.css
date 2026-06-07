@@ -23,7 +23,6 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
@@ -56,7 +55,6 @@ main{
     
 }
 }
-
 #turn {
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -65,9 +63,6 @@ main{
     border-radius: 7px;
     color: rgb(60, 62, 65);
 }
-
-
-
 #reset-btn {
     background-color: #a81b1b;
     color: rgb(255, 255, 250);
