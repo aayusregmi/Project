@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #006989;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+h1 {
+    position: absolute;
+    margin: 1rem;
+}
+main{
+    background-color: #01A7C2;
+    height: 60vh;
+    width: 60vw;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    position: relative;
+    
+}
+.quote{
+    background-color: #EAEBED;
+    height: 10vh;
+    width: 40vw ;
+    position: relative;
+    left: 10vw;
+    border-radius: 2rem;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+form{
+    display: flex;
+    justify-content: flex-start;
+    height: 3.1rem;
+    width: 60vw;
+    background-color: #A3BAC3;
+    border-radius: 2rem;
+}
+.inp_user {
+    background-color: #A3BAC3;
+    border: 1px solid #A3BAC3;
+    outline: none;
+    height: 3.1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 60vw;
+}
+button{
+    height: 2.9rem;
+    width: 5rem;
+    background-color: orange;
+    color: white;
+    border-radius: 2rem;
+    border: 1px solid #A3BAC3;
+    margin-top: 0.1rem;
+}
+.guide{
+  position: relative;
+  left: 1rem
+}
+.list{
+    background-color: gray;
+    height: 30vh;
+    width: 40vw;
+    border-radius: 1rem;
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.hide {
+    display: none;
+}
+.list div{
+    display: flex;
+    gap: 1rem;
+}
+.reset{
+    background-color: black;
+    border: none;
+    position: absolute;
+    bottom : 0px;
+    right: 0px;
+    position: absolute;
+}
+.mask{
+    display: none;
+}
