@@ -15,19 +15,21 @@ btn.addEventListener("click" , (event) => {
        el_p.style = "height: fit-content";
 
        el_box.type = "checkbox"
-       el_box.style = "height : 2.5vh; padding: 3rem; width: 1rem; background-color: black" //background color not working
+       el_box.style = "appearance: none; height : 2.5vh; padding: 3rem; width: 1rem; background-color: black" //background color not working
 
        
        list.classList.remove("hide");
        rst.classList.remove("mask");
     //    console.log(input.value);
-       div.append(el_box);
+      div.append(el_box);
        if(input.value === ""){
+        alert("Write the task you want to add")
         el_p.innerText = "Empty List"
+        // location.reload();
         el_box.remove();
        }else{
         el_p.innerText = input.value;
-       }
+       } 
        div.append(el_p);
        div.append(dlt_btn);
        list.prepend(div);
