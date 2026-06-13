@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #0C141C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.love-msg{
+    color: white;
+    position: absolute;
+    top: 5rem;
+
+}
+.card{
+    height: 70vh;
+    min-width: 40vw;
+    background: linear-gradient(to top right,#D3E0DE 20% , blue);
+    position: relative;
+    border-radius: 2rem;
+}
+.search{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem
+    ;
+}
+.search input {
+    width:50vw ;
+    padding-left: 2rem;
+    background-color: #344144 ;
+    color: white;
+    outline: none;
+    border-radius: 1rem;
+    border: 1px dashed black;
+}
+.search button {
+    width: 4vw;
+    /* height: 7vh; */
+    border-radius: 1rem;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    border:1px solid white;
+    cursor: pointer;
+}
+.hero{
+    height: 30vh;
+    width: 30vw;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    top: 4.5rem;
+}
+.hero .image{
+    display: flex;
+    justify-content: center;
+}
+.hero .temp{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.weather-extra{
+    height: 15vh;
+    width: 35vw;
+    /* background-color: black; */
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    /* justify-content: space-around;
+    flex-wrap: wrap; */
+    color: white;
+    gap:15rem;
+    left: 13rem;
+}
+.humidity-flex , .wind-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+@media (max-width: 1160px) {
+    .weather-extra {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 1rem;
+        left: 4rem;
+    }
+}

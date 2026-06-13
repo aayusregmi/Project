@@ -15,7 +15,7 @@ btn.addEventListener("click" , (event) => {
        el_p.style = "height: fit-content";
 
        el_box.type = "checkbox"
-       el_box.style = "appearance: none; height : 2.5vh; padding: 3rem; width: 1rem; background-color: black" //background color not working
+       el_box.style = "height : 2.5vh; padding: 3rem; width: 1rem; background-color: black" //background color not working
 
        
        list.classList.remove("hide");
