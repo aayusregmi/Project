@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="love-msg">
         <p>Weather App made by Aayus with ❤️</p>
     </div>
     <div class="card">
         <div class="search">
-            <input type="text" placeholder="Input a city name" name="city">
-            <button class="search-btn"><img src="/Project/weather_app/images/search.png" style="height: 2vh; width: 0.9vw;"></button>
+            <input type="text" placeholder="Kathmandu" name="city" class="input" spellcheck="false">
+            <button class="search-btn"><img src="/Project/weather_app/images/search.png"
+                    style="height: 2vh; width: 0.9vw;"></button>
         </div>
         <div class="hero">
             <div class="image">
-                <img src="/Project/weather_app/images/rain.png" style="min-width :17vw;">
+                <img src="/Project/weather_app/images/rain.png" class="dynam-img">
             </div>
             <div class="temp">
-                <p style="color: white;">Temperaure: 32°C</p>
+                Temperaure: 32°C
             </div>
         </div>
         <div class="weather-extra">
             <div class="humidity">
                 <div class="humidity-flex">
-                <img src="/Project/weather_app/images/humidity.png">
-                <p class="humidity-text">Humidtiy</p>
-                <p class="humidity-value">x</p>
+                    <img src="/Project/weather_app/images/humidity.png">
+                    <p class="humidity-text">Humidity</p>
+                    <p class="humidity-value">_</p>
                 </div>
             </div>
             <div class="wind">
                 <div class="wind-flex">
-                <img src="/Project/weather_app/images/wind.png" >
-                <p class="humidity-text">Wind</p>
-                <p class="humidity-value">x km/hr</p>
+                    <img src="/Project/weather_app/images/wind.png">
+                    <p class="wind-text">Wind</p>
+                    <p class="wind-value">_ km/hr</p>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+    Made with ❤️ by Aayus &copy; 2026
+</footer>
     <script src="weather.js"></script>
 </body>
+
 </html>

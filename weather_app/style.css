@@ -15,7 +15,9 @@ body{
 .love-msg{
     color: white;
     position: absolute;
-    top: 5rem;
+    top: 4rem;
+    display: flex;
+    
 
 }
 .card{
@@ -98,4 +100,12 @@ body{
         gap: 1rem;
         left: 4rem;
     }
+}
+.image img{
+    min-width :17vw;
+}
+footer{
+    position: absolute;
+    color: white;
+    bottom: 0px;
 }
