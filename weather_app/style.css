@@ -109,3 +109,6 @@ footer{
     color: white;
     bottom: 0px;
 }
+.hide {
+    display: none;
+}

@@ -13,6 +13,7 @@ let newsrc;
     let response = await fetch(url);
     console.log(response);
     let data = await response.json();
+    dynamic_image.classList.remove("hide");
     console.log(data);
     temp_txt.innerText = `Temperature: ${data.main.temp}°C`;
     humidity_value.innerText = `${data.main.humidity}`;
@@ -37,10 +38,12 @@ btn.addEventListener("click" , async (evt)=>{
     let city_name = input.value;
     console.log(city_name);
     url = "https://api.openweathermap.org/data/2.5/weather?q=" + city_name + "&appid=8df2b3cdebea1ed4c0a71a5b249792aa&units=metric"
+    try {
     let response = await fetch(url);
     console.log(response);
     let data = await response.json();
     console.log(data);
+    dynamic_image.classList.remove("hide");
     temp_txt.innerText = `Temperature: ${data.main.temp}°C`;
     humidity_value.innerText = `${data.main.humidity}`;
     wind_value.innerText = `${(data.wind["speed"]*3.6).toFixed(1)} km/hr`;
@@ -60,4 +63,11 @@ btn.addEventListener("click" , async (evt)=>{
         newsrc = `/Project/weather_app/images/snow.png`;
         dynamic_image.src = newsrc;
     }
+    } catch (error) {
+        dynamic_image.classList.add("hide");
+        temp_txt.innerText = "City Not Found :<"
+        humidity_value.innerText = `_`;
+        wind_value.innerText = `_`;
+    }
+    
 })
