@@ -1,34 +1,106 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-  </head>
-  <body class="bg-black">
-    <button class="btn ">Switch Mode</button>
-    <div class="container flex justify-center items-center  h-full w-full">
-      <div class="grid grid-cols-5 grid-rows-5 gap-4 text-white rounded-[5px] w-60 h-88 bg-gray-600">
-        <div class="js-screen col-span-5 bg-[#BEC5AD] text-black text-2xl pl-39 pt-4">Screen</div>
-        <div class="row-start-2 bg-[#519872] text-black "><button class="btn-1 w-full h-full text-2xl bg-amber-500 rounded-[7px]">1</button></div>
-        <div class="row-start-2 bg-[#519872] text-black"><button class="btn-2 w-full h-full text-2xl bg-amber-500 rounded-[7px]">2</button></div>
-        <div class="row-start-2 bg-[#BEC5AD] text-black"><button class="btn-3 w-full h-full text-2xl bg-amber-500 rounded-[7px]">3</button></div>
-        <div class="col-start-1 row-start-3  bg-[#BEC5AD] text-black"><button class="btn-4 w-full h-full text-2xl bg-amber-500 rounded-[7px]">4</button></div>
-        <div class="col-start-2 row-start-3 bg-[#BEC5AD] text-black"><button class="btn-5 w-full h-full text-2xl bg-amber-500 rounded-[7px]">5</button></div>
-        <div class="col-start-3 row-start-3 bg-[#BEC5AD] text-black"><button class="btn-6 w-full h-full text-2xl bg-amber-500 rounded-[7px]">6</button></div>
-        <div class="col-start-1 row-start-4 bg-[#519872] text-black"><button class="btn-7 w-full h-full text-2xl bg-amber-500 rounded-[7px]">7</button></div>
-        <div class="col-start-2 row-start-4 bg-[#BEC5AD] text-black"><button class="btn-8 w-full h-full text-2xl bg-amber-500 rounded-[7px]">8</button></div>
-        <div class="col-start-4 row-start-2 bg-[#BEC5AD] text-black"><button class="btn-add w-full h-full text-2xl bg-amber-500 rounded-[7px]">+</button></div>
-        <div class="col-start-4 row-start-3 bg-[#BEC5AD] text-black"><button class="btn-sub w-full h-full text-2xl bg-amber-500 rounded-[7px]">-</button></div>
-        <div class="col-start-4 row-start-4 bg-[#BEC5AD] text-black"><button class="btn-mul w-full h-full text-2xl bg-amber-500 rounded-[7px]">*</button></div>
-        <div class="col-span-2 col-start-4 row-start-5 bg-[#BEC5AD] text-black"><button class="btn-eq w-full h-full text-2xl bg-amber-500 rounded-[7px]">=</button></div>
-        <div class="col-start-5 row-start-2 bg-[#BEC5AD] text-black"><button class="btn--divi w-full h-full text-2xl bg-amber-500 rounded-[7px]">/</button></div>
-        <div class="col-start-5 row-start-3 bg-[#BEC5AD] text-black"><button class="btn-CE w-full h-full text-2xl bg-amber-500 rounded-[7px]">CE</button></div>
-        <div class="col-start-5 row-start-4 bg-[#BEC5AD] text-black"><button class="btn-AC w-full h-full text-2xl bg-amber-500 rounded-[7px]">AC</button></div>
-        <div class="col-start-3 row-start-4 bg-[#BEC5AD] text-black"><button class="btn-9 w-full h-full text-2xl bg-amber-500 rounded-[7px]">9</button></div>
-        <div class="col-span-3 col-start-1 row-start-5 bg-[#519872] text-black"><button class="btn-0 w-full h-full text-2xl bg-amber-500 rounded-[7px]">0</button></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-black ">
+  <div class="container flex justify-center items-center h-full w-full">
+    <div class="grid grid-cols-5 grid-rows-5 gap-4 text-white rounded-[5px] w-60 h-88 bg-gray-600">
+      <div class="js-screen col-span-5 bg-[#BEC5AD] text-black text-xl pl-45 pt-4 rounded-md">
+        Screen
+      </div>
+      <div class="row-start-2 bg-[#519872] text-black">
+        <button class="btn btn-1 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="1">
+          1
+        </button>
+      </div>
+      <div class="row-start-2 bg-[#519872] text-black">
+        <button class="btn btn-2 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="2">
+          2
+        </button>
+      </div>
+      <div class="row-start-2 bg-[#BEC5AD] text-black">
+        <button class="btn btn-3 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="3">
+          3
+        </button>
+      </div>
+      <div class="col-start-1 row-start-3 bg-[#BEC5AD] text-black">
+        <button class="btn btn-4 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="4">
+          4
+        </button>
+      </div>
+      <div class="col-start-2 row-start-3 bg-[#BEC5AD] text-black">
+        <button class="btn btn-5 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="5">
+          5
+        </button>
+      </div>
+      <div class="col-start-3 row-start-3 bg-[#BEC5AD] text-black">
+        <button class="btn btn-6 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="6">
+          6
+        </button>
+      </div>
+      <div class="col-start-1 row-start-4 bg-[#519872] text-black">
+        <button class="btn btn-7 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="7">
+          7
+        </button>
+      </div>
+      <div class="col-start-2 row-start-4 bg-[#BEC5AD] text-black">
+        <button class="btn btn-8 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="8">
+          8
+        </button>
+      </div>
+      <div class="col-start-4 row-start-2 bg-[#BEC5AD] text-black">
+        <button class="btn btn-add w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="+">
+          +
+        </button>
+      </div>
+      <div class="col-start-4 row-start-3 bg-[#BEC5AD] text-black">
+        <button class="btn btn-sub w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="-">
+          -
+        </button>
+      </div>
+      <div class="col-start-4 row-start-4 bg-[#BEC5AD] text-black">
+        <button class="btn btn-mul w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="*">
+          *
+        </button>
+      </div>
+      <div class="col-span-2 col-start-4 row-start-5 bg-[#BEC5AD] text-black">
+        <button class="btn btn-eq w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="=">
+          =
+        </button>
+      </div>
+      <div class="col-start-5 row-start-2 bg-[#BEC5AD] text-black">
+        <button class="btn btn-divi w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="/">
+          /
+        </button>
+      </div>
+      <div class="col-start-5 row-start-3 bg-[#BEC5AD] text-black">
+        <button class="btn btn-CE w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="CE">
+          CE
+        </button>
+      </div>
+      <div class="col-start-5 row-start-4 bg-[#BEC5AD] text-black">
+        <button class="btn btn-AC w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="AC">
+          AC
+        </button>
+      </div>
+      <div class="col-start-3 row-start-4 bg-[#BEC5AD] text-black">
+        <button class="btn btn-9 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="9">
+          9
+        </button>
+      </div>
+      <div class="col-span-3 col-start-1 row-start-5 bg-[#519872] text-black">
+        <button class="btn btn-0 w-full h-full text-2xl bg-amber-500 rounded-[7px]" value="0">
+          0
+        </button>
       </div>
     </div>
-    <script src="/Calculator/script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
