@@ -1,5 +1,8 @@
 const btn = document.querySelectorAll(".btn");
 const screen = document.querySelector(".js-screen");
+const btn_mode = document.querySelector(".btn-mode");
+const bg_color = document.querySelector("body");
+let ismode = "dark" ;
 let num1;
 let num2;
 let operator;
@@ -65,3 +68,12 @@ function divi(num1 , num2){
 function sub(num1 , num2){
     return Number(num1) - Number(num2);
 }
+btn_mode.addEventListener("click" , ()=>{
+   if(ismode === "dark"){
+      bg_color.style = "background-color: white"
+      ismode = "light";
+   }else{
+    bg_color.style = "background-color: black"
+    ismode = "dark";
+   }
+} )
