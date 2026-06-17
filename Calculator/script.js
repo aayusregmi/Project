@@ -8,25 +8,32 @@ screen.innerText = "";
 for(let button of btn){
     
     button.addEventListener("click" , (evt)=>{
-        if(evt.target.value != "CE"){screen.innerText = evt.target.value;}
+        // if(evt.target.value !== "CE"){screen.innerText = evt.target.value;}
        if(evt.target.value === "AC"){
         location.reload();
-       }else if(evt.target.value === "CE"){
-        evt.target.value.slice(0 , (evt.target.value.length-1))
        }else if(evt.target.value === "+" || evt.target.value === "-" || evt.target.value === "*" || evt.target.value === "/"){
         operator = evt.target.value;
+        screen.innerText = operator;
        }else if(operator == null){
+        if(evt.target.value !== "CE"){
         num1 = (num1 || "") + evt.target.value;
-        console.log(num1);
-        screen.innerText = num1;
+        screen.innerText = num1;}
+        if(evt.target.value === "CE"){
+          num1 = num1.slice(0 , (num1.length-1))
+          screen.innerText = num1;
+        }
        }else{
+        if(evt.target.value !== "CE" && evt.target.value !== "="){
         num2 = (num2 || "") + evt.target.value;
-        console.log(num2);
-        screen.innerText = num2;
+        screen.innerText = num2;}
+        if(evt.target.value === "CE" ){
+            num2 = num2.slice(0 , (num2.length-1));
+            screen.innerText = num2;
+        }
        }
 
        if(evt.target.value === "="){
-        num2 = num2.slice(0 , (num2.length-1))
+        // num2 = num2.slice(0 , (num2.length-1))
         if(operator === "+"){
             sum(num1 , num2)
             screen.innerText = sum(num1 , num2);
